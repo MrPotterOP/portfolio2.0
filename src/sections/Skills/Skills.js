@@ -46,7 +46,7 @@ function Skills() {
     return (
         <section className="skills">
             <div className={styles.skillsBox}>
-                <h2 className="subSectionTitle">TECHNOLOGIES I'VE WORKED ON</h2>
+                <h2 className="subSectionTitle">TECHNOLOGIES I&apos;VE WORKED ON</h2>
                 
                 <div className={styles.skillsFlex}>
                     {skills.map((skill, index) => (

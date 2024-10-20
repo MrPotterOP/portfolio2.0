@@ -80,7 +80,7 @@ function Hero() {
                     </div>
 
                     <div className={styles.heroText}>
-                        <h1>I'm shubham, full stack web <br /> developer and designer</h1>
+                        <h1>I&apos;m shubham, full stack web <br /> developer and designer</h1>
                         
                         <button className={`${styles.btnPlane} link`} onClick={() => handleLink('about')}>((scroll))</button>
                     </div>
