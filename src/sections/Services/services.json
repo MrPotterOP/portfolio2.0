@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Web Design",
+        "description": "I create clean and user-friendly designs that make websites look great and easy to use. My focus is on making sure your site is not only attractive but also helps visitors find what they need quickly."
+    },
+    {
+        "title": "Web Development",
+        "description": "I build dynamic websites that deliver a smooth and engaging experience for users. My approach combines functionality and creativity to ensure your site stands out. I focus on fast loading times, intuitive navigation, and seamless interactions that keep users coming back."
+    },
+    {
+        "title": "Native Application",
+        "description": "I develop native applications specifically for Windows and macOS. These desktop apps are designed to take full advantage of the platform's features, ensuring a smooth and efficient user experience tailored to your needs."
+    },
+    {
+        "title": "Maintenance",
+        "description": "I offer ongoing maintenance services to keep your website or app running smoothly. This includes regular updates, bug fixes, and improvements, so you can focus on your business without worrying about technical issues."
+    }
+]

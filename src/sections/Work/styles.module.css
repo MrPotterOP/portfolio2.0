@@ -1,0 +1,32 @@
+.workBox {
+    padding: 30px var(--pd-page);
+    background-color: var(--color-white);
+}
+
+.workGrid {
+    margin: 50px 0 50px 0;
+    width: 100%;
+    height: calc(100vw * 0.8 + 300vh);
+    display: grid;
+
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 60px;
+    
+    
+}
+
+
+@media (min-width: 768px) {
+
+    .workGrid {
+
+        height: calc(100vw * 0.5 + 100vh); 
+
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+        grid-template-rows: repeat(2, minmax(500px, 1fr));
+
+        column-gap: 60px;
+    }
+}
+
+

@@ -1,0 +1,174 @@
+.skillsBox {
+    margin: 50px var(--pd-page);
+}
+
+.skillsFlex {
+    margin: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.skillCard {
+
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+
+    padding: 20px 4px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.166);
+}
+
+.skillCard .expandBtn {
+    height: max-content;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out; 
+}
+
+.skillCard.active .expandBtn {
+    transform: rotate(45deg);
+}
+
+
+
+.skill {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skillIcon {
+    width: 22px;
+    height: 22px;
+
+    display: none;
+}
+
+.skillName, .skillText {
+    font-size: var(--fs-p3);
+    font-weight: var(--font-weight-regular);
+
+    display: flex;
+    gap: 10px;
+
+}
+
+.skillDetails {
+    font-size: var(--fs-p3);
+    color: var(--color-grey);
+
+    padding: 24px 0;
+
+    display: flex;
+    flex-direction: column;
+    /* gap: 12px; */
+
+    display: none;
+}
+
+.skillDescription {
+    line-height: 1.2;
+}
+
+
+
+.skillCard.active .skillDetails {
+    display: flex;
+    max-height: 500px;
+    opacity: 1;
+}
+
+.skillCard.active .skillIcon {
+    display: inline-flex;
+}
+
+.skillCard.active .skillText {
+    transform: translateY(3px);
+}
+
+
+
+@media (min-width: 768px) {
+
+    .skillsBox {
+        margin: 80px var(--pd-page);
+    }
+
+    .skill {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+
+        overflow: hidden;
+    }
+
+    .skillName {
+        width: 60%;
+    }
+    
+    .skillDetails {
+        font-size: var(--fs-p3);
+        color: var(--color-grey);
+        padding: 0;
+        display: flex;
+
+        width: 68%;
+
+
+    }
+
+    .skillDescription {
+        /* display: none; */
+        max-height: 0px;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .skillCard {
+        position: relative;
+    }
+
+    .skillCard::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-black);
+        display: block;
+        position: absolute;
+
+        bottom: -1px;
+        left: 0;
+
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .5s cubic-bezier( 0.80, 0.20, 0.21, 0.71 );
+    }
+
+    .skillCard:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+     
+    
+    .skillCard.active .skillIcon {
+        display: inline-flex;
+    }
+
+    .skillCard.active:hover::after {
+        transform: scaleX(0);
+    }  
+
+    .skillCard.active .skillDescription {
+        margin-top: 16px;
+        max-height: 500px;
+        opacity: 1;
+
+    }
+
+    
+
+
+}

@@ -1,0 +1,98 @@
+[
+    {
+        "name": "NextJS",
+        "icon": "nextjs",
+        "tags": ["Frontend", "SEO"],
+        "description": "Next.js is a JavaScript framework for the React JavaScript library. It is used to build the user interface of a web application. I've started using it from 2024 knowing the fact that it offers various features for SEO optimisation, like SSR(Server Side Rendering) and more. used in client projects like Yantra and optimised it well for the SEO using it's features, also decresed the site loading time by optimising Images through the Next/Image module. also the development get's faster with the features Nextjs provides."
+    },
+    {
+        "name": "ReactJS",
+        "icon": "reactjs",
+        "tags": ["Frontend"],
+        "description": "I've used react in various projects since 2020. Learned in in 202 from the Web Development Bootcamp by Angela Yu, and from then i really enjoyed working with it, hooks like useState and useEffect really helped me to solve comlplex interactive features on the frontend."
+    },
+    {
+        "name": "HTML/CSS",
+        "icon": "html",
+        "tags": ["Frontend"],
+        "description": "HTML/CSS is the foundation of web and for me it was preety intrsting to learn, even if i spend most of my time leaning new new technologies i still get to know more and more new concepts of HTML/CSS while working on any web project, it's like having basic/foundational controls of the web developmnet"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "javascript",
+        "tags": ["Frontend", "Backend"],
+        "description": "JavaScript is the core language of the web, and it's where everything began for me in web development. I've been using it since 2019, and it's what makes websites interactive and functional. From manipulating the DOM to handling APIs, it's pretty much a must-have tool for any web project. I have worked on both frontend and backend projects using JavaScript, It's like the glue that holds the entire stack together."
+    },
+    {
+        "name": "Framer Motion",
+        "icon": "framermotion",
+        "tags": ["Animation", "Frontend"],
+        "description": "Framer Motion is a powerful animation library for React, and I started using it around 2023. What I love about it is how easy it makes adding smooth, interactive animations to any component. I've used it in projects like this portfolio website, Yantra, Fiverr client project where I needed more control over animations compared to basic CSS transitions, and it really enhances the user experience. "
+    },
+    {
+        "name": "Figma",
+        "icon": "figma",
+        "tags": ["Design", "UI/UX"],
+        "description": "Figma is a web-based design tool that I have been using since 2022 for UI/UX design. I learned it when i was working for Photograde AI as a developer and thare was a need for a Figma develope, and i was curious to learned it too, so i started working on it from then. Even though I'm not formally trained in design, Figma helped me visualize ideas fast, and i have used it in client projects to create mockups. Its been my go-to tool for designing websites."
+    },
+    {
+        "name": "NodeJS",
+        "icon": "nodejs",
+        "tags": ["Backend", "JavaScript"],
+        "description": "Node.js is what brought JavaScript to the backend, and I have been using it since 2021 for building full stack applications. It is great because I can use the same language on both frontend and backend, making full-stack development smoother. I have worked on projects where Node.js handled everything from API creation to real-time services, and it has been super reliable. With the help of Express.js, building out REST APIs became much faster, and I could scale up projects easily. Plus, the vast ecosystem of NPM packages makes development even more efficient."
+    },
+    {
+        "name": "ExpressJS",
+        "icon": "expressjs",
+        "tags": ["Backend", "JavaScript"],
+        "description": "Express.js is a web framework for Node.js that I have been using since 2021. It makes building backend services and APIs much simpler and faster. I have used it in several projects where I needed to set up RESTful APIs, and it handled routing and middleware beautifully. Combined with Node.js, Express.js helps me develop scalable backend solutions without much hassle."
+    },
+    {
+        "name": "MongoDB",
+        "icon": "mongodb",
+        "tags": ["Database", "Backend"],
+        "description": "MongoDB is a NoSQL database that I have been using for handling data in web applications. Its flexibility with document-based storage makes it easy to work with dynamic data, especially when building applications that need to scale. I have used MongoDB in projects where I needed fast and efficient data management without worrying about complex schema definitions, and it worked great for storing and retrieving JSON-like documents. It integrates well with Node.js and Express.js, making it a solid choice for building full-stack apps."
+    },
+    {
+        "name": "ElectronJS",
+        "icon": "electronjs",
+        "tags": ["Desktop", "JavaScript"],
+        "description": "Electron.js is a framework that lets you build cross-platform desktop applications using web technologies, and I did exproled it when i was wrking for Photograde AI, whare i was resposible for building the web application first with MERN stack and then package the frontend with ElectronJS to make it a desktop application. What is great about Electron is that I can use the same JavaScript, HTML, and CSS skills to create apps that work on Windows, macOS, Electron made it easy to develop without learning an entirely new technology stack. It is built on top of Node.js and Chromium, giving me the power of web development combined with desktop features."
+    },
+    {
+        "name": "Google Cloud Platform",
+        "icon": "gcp",
+        "tags": ["Cloud", "Backend"],
+        "description": "Google Cloud Platform (GCP) is where I managed hosting and storage solutions during my time at Photograde AI. I haveworked on GCP in 2022, and it is a reliable choice for deploying applications and managing resources. I was responsible for setting up backend instances and ensuring everything ran smoothly, which included handling Google Cloud Storage buckets for data management. The integration of various services in GCP made it easy to scale applications and keep everything organized, allowing for efficient data retrieval and storage."
+    },
+    {
+        "name": "Cloudinary API",
+        "icon": "cloudinary",
+        "tags": ["Cloud", "Media"],
+        "description": "Cloudinary API is a powerful tool for managing and optimizing media assets. I have used it to easily upload, transform, and serve images and videos in my web projects, improving load times and user experience."
+    },
+    {
+        "name": "Postman",
+        "icon": "postman",
+        "tags": ["API", "Testing"],
+        "description": "Postman is an API development tool I use for testing and documenting APIs. It simplifies the process of making requests and checking responses, which has been invaluable during backend development."
+    },
+    {
+        "name": "Git",
+        "icon": "git",
+        "tags": ["Version Control"],
+        "description": "Git is my go-to version control system for managing code changes. I have been using it to collaborate on projects and keep track of my development progress since I started coding."
+    },
+    {
+        "name": "Codium",
+        "icon": "codium",
+        "tags": ["AI", "Development"],
+        "description": "Codium is an AI code auto-completer that acts as a small assistant during my development process. It helps me write code faster by suggesting completions and snippets, similar to GitHub Copilot."
+    },
+    {
+        "name": "ChatGPT",
+        "icon": "chatgpt",
+        "tags": ["AI", "Assistance"],
+        "description": "ChatGPT is like a coding friend to me, who is always ready to help. It has been very helpful for me, saving tons of time by providing quick answers to my coding questions and helping me debug when things get tricky. Learning new technologies becomes easy with its support, as I can ask for explanations on complex concepts and get clear answers as i wanted. Whether I need to brainstorm project ideas or figure out the best practices, ChatGPT is my go-to assistant that keeps me moving forward in my development journey."
+    }
+]

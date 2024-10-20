@@ -1,0 +1,26 @@
+[
+    {
+        "title": "YANTRA | WINDOWS",
+        "tags": ["RESEARCH", "DESIGN", "DEVELOPEMENT"],
+        "videoTitle": "yantra",
+        "caseStudy": "yantra"
+    },
+    {
+        "title": "PROATHLETES | AISENT",
+        "tags": ["RESEARCH", "DESIGN", "DEVELOPEMENT"],
+        "videoTitle": "aisent",
+        "caseStudy": "yantra"
+    },
+    {
+        "title": "ALVIN LUCIEN | VIDEO EDITOR PORTFOLIO",
+        "tags": ["RESEARCH", "DESIGN", "DEVELOPEMENT"],
+        "videoTitle": "alvin",
+        "caseStudy": "aisent"
+    },
+    {
+        "title": "INTERIOR DESIGNER | WEB DESIGN CONCEPT",
+        "tags": ["RESEARCH", "DESIGN"],
+        "videoTitle": "interior",
+        "caseStudy": "aisent"
+    }
+]

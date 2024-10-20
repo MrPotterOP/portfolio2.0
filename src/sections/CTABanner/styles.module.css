@@ -1,0 +1,238 @@
+.ctaBox {
+    margin: 140px 0 100px 0;
+
+    width: 100%;
+    height: 100%;
+
+
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+.ctaImagesBox {
+    width: 420px;
+    height: 480px;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.ctaImage {
+    position: absolute;
+
+    pointer-events: auto;
+}
+
+.ctaImage img {
+    object-fit: cover;
+    width: 190px;
+    height: 190px;
+}
+
+.ctaImagesBox .ctaImage:nth-child(1) {
+    z-index: -1;
+    transform: rotate(-12deg);
+
+    top: 120px;
+    left: -60px;
+
+}
+
+.ctaImagesBox .ctaImage:nth-child(2) {
+    z-index: -2;
+
+    transform: rotate(6deg);
+
+    top: 20px;
+    left: 50px;
+
+
+   
+
+
+}
+
+.ctaImagesBox .ctaImage:nth-child(3) {
+    z-index: -3;
+
+    top: 200px;
+    left: 10px;
+
+    transform: rotate(-7deg);
+
+
+
+}
+
+.ctaImagesBox .ctaImage:nth-child(4) {
+    top: 160px;
+    right: 50px;
+
+    transform: rotate(8deg);
+
+}
+
+.ctaImagesBox .ctaImage:nth-child(5) {
+    z-index: -4;
+    top: 20px;
+    right: 10px;
+
+    transform: rotate(-12deg);
+
+
+}
+
+.ctaImagesBox .ctaImage:nth-child(6) {
+
+    top: 210px;
+    right: -90px;
+
+    transform: rotate(12deg);
+
+
+}
+
+
+
+.ctaBtn {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 9;
+
+    pointer-events: none;
+
+}
+
+.ctaBtn p {
+    font-family: var(--font-beta);
+    font-size: calc(var(--fs-h1) + 20px);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    color: var(--color-white);
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+
+@media (min-width: 768px) {
+
+.ctaBox {
+    margin: 0;
+    padding: 200px 0 100px 0;
+}
+
+
+.ctaImagesBox {
+    height: 580px;
+    width: 1000px;
+
+    margin: auto;
+}
+
+
+
+.ctaImage img {
+    object-fit: cover;
+    width: 280px;
+    height: 280px;
+}
+
+.ctaImagesBox .ctaImage:nth-child(1){
+    z-index: 2;
+    transform: rotate(-12deg);
+
+    top: 120px;
+    left: -60px;
+
+}
+
+.ctaImagesBox .ctaImage:nth-child(2) {
+    z-index: 2;
+
+    transform: rotate(6deg);
+
+    top: 20px;
+    left: 200px;
+
+
+}
+
+.ctaImagesBox .ctaImage:nth-child(3) {
+    z-index: 1;
+
+    top: 200px;
+    left: 180px;
+
+    transform: rotate(-7deg);
+
+}
+
+.ctaImagesBox .ctaImage:nth-child(4) {
+    z-index: 4;
+    top: 200px;
+    right: 260px;
+
+    transform: rotate(8deg);
+
+
+
+}
+
+.ctaImagesBox .ctaImage:nth-child(5) {
+    z-index: 2;
+    top: 22px;
+    right: 210px;
+
+    transform: rotate(-10deg);
+
+
+}
+
+.ctaImagesBox .ctaImage:nth-child(6) {
+    z-index: 3;
+    top: 180px;
+    right: 10px;
+
+    transform: rotate(12deg);
+
+
+}
+
+
+
+.ctaBtn {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.ctaBtn p {
+    font-family: var(--font-beta);
+    font-size: calc(var(--fs-h1));
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    color: var(--color-white);
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+
+
+}
+
+
+
+
