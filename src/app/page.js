@@ -40,58 +40,46 @@ import Footer from "@/sections/Footer/Footer";
 import Loading from "@/components/Loading"; 
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
-  const [progress, setProgress] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [loadingPercentage, setLoadingPercentage] = useState(0);
 
   useEffect(() => {
-    const handleMediaLoad = () => {
-      setLoading(false);
-    };
+    const imageFolder = '/images'; // Use the correct path for Next.js public folder
+    const imageUrls = [
+      "aisent.mp4",
+      "alvin.mp4",
+      "hero.mp4",
+      "interior.mp4",
+      "showreel.mp4",
+      "yantra.mp4",
+      "5.jpeg"
+    ];
 
-    const mediaElements = [...document.querySelectorAll("img, video")];
-    let loadedMediaCount = 0;
-    const totalMedia = mediaElements.length;
-
-    if (totalMedia === 0) {
-      handleMediaLoad(); // No media to load
-      return;
-    }
-
-    mediaElements.forEach((media) => {
-      const handleLoad = () => {
-        loadedMediaCount++;
-        updateProgress(loadedMediaCount, totalMedia);
-        
-        if (loadedMediaCount === totalMedia) {
-          handleMediaLoad();
-        }
-      };
-
-      if (media.complete || media.readyState === 4) {
-        handleLoad(); // If media is already loaded
-      } else {
-        media.onload = handleLoad; // For images
-        media.onloadedmetadata = handleLoad; // For videos
-        media.onerror = handleLoad; // Count as loaded even on error
-      }
+    const imagePromises = imageUrls.map((imageUrl) => {
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.src = `${imageFolder}/${imageUrl}`;
+        img.onload = () => {
+          resolve();
+          setLoadingPercentage((prevPercentage) =>
+            prevPercentage + (100 / imageUrls.length)
+          );
+        };
+        img.onerror = resolve; // To avoid blocking if an image fails to load
+      });
     });
 
-    const updateProgress = (loaded, total) => {
-      setProgress(Math.round((loaded / total) * 100));
-    };
-
-    // Cleanup function to avoid memory leaks
-    return () => {
-      mediaElements.forEach((media) => {
-        media.onload = null;
-        media.onloadedmetadata = null;
-        media.onerror = null; // Remove event listeners
+    Promise.all(imagePromises)
+      .then(() => {
+        setImagesLoaded(true);
+      })
+      .catch(() => {
+        setImagesLoaded(true); // Mark images as loaded even if there's an error
       });
-    };
   }, []);
 
-  if (loading) {
-    return <Loading progress={progress} />; // Pass progress to loading component
+  if (!imagesLoaded) {
+    return <Loading progress={loadingPercentage} />; // Pass progress to loading component
   }
 
   return (
