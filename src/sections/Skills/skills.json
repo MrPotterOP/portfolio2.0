@@ -63,7 +63,7 @@
         "name": "Google Cloud Platform",
         "icon": "gcp",
         "tags": ["Cloud", "Backend"],
-        "description": "Google Cloud Platform (GCP) is where I managed hosting and storage solutions during my time at Photograde AI. I haveworked on GCP in 2022, and it is a reliable choice for deploying applications and managing resources. I was responsible for setting up backend instances and ensuring everything ran smoothly, which included handling Google Cloud Storage buckets for data management. The integration of various services in GCP made it easy to scale applications and keep everything organized, allowing for efficient data retrieval and storage."
+        "description": "Google Cloud Platform (GCP) is where I managed hosting and storage solutions during my time at Photograde AI. I have worked on GCP in 2022, and it is a reliable choice for deploying applications and managing resources. I was responsible for setting up backend instances and ensuring everything ran smoothly, which included handling Google Cloud Storage buckets for data management. The integration of various services in GCP made it easy to scale applications and keep everything organized, allowing for efficient data retrieval and storage."
     },
     {
         "name": "Cloudinary API",
