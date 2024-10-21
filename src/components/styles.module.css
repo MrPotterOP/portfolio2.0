@@ -115,6 +115,8 @@
     height: 2px;
 
     background-color: var(--color-black);
+
+    transition: width .3s ease;
 }
 
 
