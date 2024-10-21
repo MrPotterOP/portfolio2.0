@@ -13,7 +13,7 @@
 .heroBg {
     width: 100%;
     height: 100%;
-    background-color: var(--color-white);
+    background-color: var(--color-black);
 
     position: fixed;
     top: 0;

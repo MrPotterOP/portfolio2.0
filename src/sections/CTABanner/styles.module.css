@@ -23,6 +23,8 @@
     position: absolute;
 
     pointer-events: auto;
+
+    background-color: var(--color-black);
 }
 
 .ctaImage img {

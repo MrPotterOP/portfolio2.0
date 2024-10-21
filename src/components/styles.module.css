@@ -68,6 +68,8 @@
     margin: 0 auto;
 
     transition: all .4s ease-in-out;
+
+    background-color: var(--color-black);
 }
 
 
@@ -102,10 +104,12 @@
     align-items: center;
 
     gap: 14px;
+
+    padding-bottom: 200px;
 }
 
 .loadingBar {
-    width: 280px;
+    width: 200px;
     height: 2px;
 
     background-color: rgb(208, 208, 208);
@@ -146,5 +150,13 @@
 
     .cardBg:hover .cardImage {
         scale: 1;
+    }
+
+    .loadingBarBox {
+        padding-bottom: 0;
+    }
+
+    .loadingBar {
+        width: 280px;
     }
 }

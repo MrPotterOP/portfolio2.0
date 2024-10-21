@@ -41,7 +41,7 @@
 
 .aboutShowreelBox {
     height: 300px;
-    background-color: aquamarine;
+    background-color: var(--color-black);
 }
 
 .aboutShowreelBox img {
