@@ -24,7 +24,7 @@ function WorkCard({ title, tags, videoTitle, caseStudy }) {
     }
 
     return ( 
-        <Link href={`/casestudy/${caseStudy}`} className={styles.workCard}>
+        <Link href={caseStudy} target="_blank" rel="noreferrer" className={styles.workCard}>
             <motion.div 
                 className={`${styles.cardBg} linkLight`}
                 onHoverStart={handleMouseEnter} 
