@@ -40,11 +40,11 @@ import Footer from "@/sections/Footer/Footer";
 import Loading from "@/components/Loading";
 
 export default function Home() {
-  const [mediaLoaded, setMediaLoaded] = useState(false); // Handle both images and videos
+  const [mediaLoaded, setMediaLoaded] = useState(false);
   const [loadingPercentage, setLoadingPercentage] = useState(0);
 
   useEffect(() => {
-    const mediaFolder = '/images'; // Use the correct path for Next.js public folder
+    const mediaFolder = '/images';
     const mediaUrls = [
       "aisent.mp4",
       "alvin.mp4",
@@ -52,49 +52,60 @@ export default function Home() {
       "interior.mp4",
       "showreel.mp4",
       "yantra.mp4",
-      "5.jpeg"
+      "5.jpeg",
+      "4.jpeg"
     ];
 
     const totalMedia = mediaUrls.length;
+    let loadedCount = 0;
 
-    // Helper to update progress and ensure percentage has no decimals
     const updateProgress = () => {
-      setLoadingPercentage((prev) => Math.min(Math.floor(prev + 100 / totalMedia), 100));
+      loadedCount++;
+      const percentage = Math.floor((loadedCount / totalMedia) * 100);
+      setLoadingPercentage(percentage);
     };
 
-    // Image and video loading promises
-    const mediaPromises = mediaUrls.map((url) => {
-      return new Promise((resolve) => {
+    const preloadMedia = (url) => {
+      return new Promise((resolve, reject) => {
         const isVideo = url.endsWith('.mp4');
         const mediaElement = isVideo ? document.createElement('video') : new Image();
+        
         mediaElement.src = `${mediaFolder}/${url}`;
         
-        // Handle load for both image and video
+        if (isVideo) {
+          mediaElement.preload = 'auto';
+          mediaElement.load();
+        }
+
         mediaElement.onloadeddata = mediaElement.onload = () => {
           updateProgress();
-          resolve();
+          resolve(mediaElement);
         };
-        
-        // Handle error case
-        mediaElement.onerror = resolve; // Even if media fails, resolve to not block
-      });
-    });
 
-    Promise.all(mediaPromises)
-      .then(() => {
-        setMediaLoaded(true); // All media items are loaded
-      })
-      .catch(() => {
-        setMediaLoaded(true); // In case of error, mark as loaded
+        mediaElement.onerror = (error) => {
+          console.error(`Failed to load ${url}:`, error);
+          updateProgress();
+          reject(error);
+        };
       });
+    };
+
+    Promise.all(mediaUrls.map(preloadMedia))
+      .then((loadedMedia) => {
+        // Store preloaded media in a cache or context if needed
+        setMediaLoaded(true);
+      })
+      .catch((error) => {
+        console.error("Some media failed to load:", error);
+        setMediaLoaded(true); // Still mark as loaded to show content
+      });
+
   }, []);
 
-  // Display loading screen until media is loaded
   if (!mediaLoaded) {
-    return <Loading progress={loadingPercentage} />; // Pass progress to loading component
+    return <Loading progress={loadingPercentage} />;
   }
 
-  // Once loaded, display the actual content
   return (
     <main>
       <Hero />
