@@ -7,7 +7,12 @@ import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
+import { useMediaCache } from '@/utils/MediaCacheContext';
+
 function About() {
+
+    const { cache } = useMediaCache();
+    const videoSrc = cache.aboutVideo;
 
 
     const ref = useRef(null);
@@ -18,10 +23,6 @@ function About() {
     });
 
     let y = useTransform(scrollYProgress, [0, 1], ['40%', '100%']);
-
-
-    
-
 
     return ( 
         <section className="about" ref={ref}>
@@ -48,7 +49,7 @@ function About() {
 
 
                     <video autoPlay muted loop className={styles.heroVideo}>
-                        <source src="/images/showreel.mp4" type="video/mp4" />
+                        <source src={videoSrc} type="video/mp4" />
                     </video>
                 </motion.div>
 
