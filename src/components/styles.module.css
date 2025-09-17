@@ -590,7 +590,7 @@
 @media (max-width: 425px) {
     .chatbot {
         width: 100%;
-        min-height: 100vh;
+        min-height: calc(100vh - 62px);
         border-radius: 0;
         box-shadow: none;
         right: 0;
