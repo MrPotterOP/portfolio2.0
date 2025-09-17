@@ -4,6 +4,8 @@ import SmoothScroll from "@/components/SmoothScroll";
 import {Inter, Poppins} from "next/font/google";
 import "./globals.css";
 
+import Chatbot from "@/components/ChatBot";
+
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-alfa" });
 const poppins = Poppins({ 
@@ -24,6 +26,7 @@ export default function RootLayout({ children }) {
         <CustomCursor />
         <SmoothScroll>
         {children}
+        <Chatbot />
         </SmoothScroll>
       </body>
     </html>

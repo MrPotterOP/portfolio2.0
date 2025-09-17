@@ -6,21 +6,21 @@
         "caseStudy": "https://www.yantraindia.com/"
     },
     {
-        "title": "PROATHLETES | AISENT",
+        "title": "TRAVEL TAILOR",
         "tags": ["RESEARCH", "DESIGN", "DEVELOPEMENT"],
-        "videoTitle": "aisent",
-        "caseStudy": "https://aisent.netlify.app/"
+        "videoTitle": "travel",
+        "caseStudy": "https://traveltailor.in/"
     },
     {
-        "title": "ALVIN LUCIEN | VIDEO EDITOR PORTFOLIO",
-        "tags": ["RESEARCH", "DESIGN", "DEVELOPEMENT"],
-        "videoTitle": "alvin",
-        "caseStudy": "https://alvinlucien.netlify.app/"
+        "title": "SMOKING CHIMNEY | STUDIO",
+        "tags": ["ANIMATION", "DEVELOPEMENT"],
+        "videoTitle": "scs",
+        "caseStudy": "https://www.smokingchimney.in/"
     },
     {
-        "title": "INTERIOR DESIGNER | WEB DESIGN CONCEPT",
-        "tags": ["RESEARCH", "DESIGN"],
-        "videoTitle": "interior",
-        "caseStudy": "https://www.figma.com/file/nJMdu6NpByYdyvFolGNPaB/SHUBH-Designs?type=design&node-id=0%3A1&mode=design&t=u0vq7"
+        "title": "TRUFLO | INTELLIGENCE",
+        "tags": ["DEVELOPEMENT"],
+        "videoTitle": "truflo",
+        "caseStudy": "https://www.truflo.ai/"
     }
 ]

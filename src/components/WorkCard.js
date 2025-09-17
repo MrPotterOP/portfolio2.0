@@ -1,16 +1,20 @@
 'use client'
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import styles from './styles.module.css';
 import { motion } from 'framer-motion';
+
+import Image from "next/image";
 
 function WorkCard({ title, tags, videoTitle, caseStudy }) {
     const videoRef = useRef(null); 
     const tagsLength = tags.length;
 
+    const [isHovered, setIsHovered] = useState(false);
+
     const handleMouseEnter = () => {
-        // Play video and scale up
+        setIsHovered(true);
         if (videoRef.current) {
             videoRef.current.play();
         }
@@ -31,11 +35,17 @@ function WorkCard({ title, tags, videoTitle, caseStudy }) {
                 onHoverEnd={handleMouseLeave}   
             >
 
-                <img className={styles.cardImage} src={`/images/${videoTitle}.jpg`} alt={title}>
-                </img>
+                <Image className={styles.cardImage} src={`/images/${videoTitle}.jpg`} alt={title} width={700} height={720}>
+                </Image>
 
                 <div className={styles.workVideoBox}> 
-                    <video ref={videoRef} muted loop className={styles.workVideo}>
+                    {
+                        !isHovered && 
+                        <div className={styles.workVideoCover}>
+                            <Image src={`/images/cover/${videoTitle}.png`} width={848} height={480} alt={title}  objectFit="cover" />
+                        </div>
+                    }
+                    <video ref={videoRef} muted loop className={!isHovered ? `${styles.workVideo} ${styles.inactive}` : styles.workVideo}>
                         <source src={`/images/${videoTitle}.mp4`} type="video/mp4" />
                     </video>
                 </div>

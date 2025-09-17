@@ -9,11 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@prisma/client": "^6.16.1",
     "@studio-freight/lenis": "^1.0.42",
+    "axios": "^1.11.0",
+    "bson": "^6.10.4",
     "framer-motion": "^11.9.0",
     "next": "14.2.13",
+    "prisma": "^6.16.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "eslint": "^8",
