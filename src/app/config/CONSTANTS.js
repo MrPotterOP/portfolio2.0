@@ -5,7 +5,7 @@ export const CONSTANTS = {
   WHATSAPP_LINK: "https://wa.me/917498503089",
   GITHUB_LINK: "https://github.com/MrPotterOP",
   LINKEDIN_LINK: "https://www.linkedin.com/in/mr-potter/",
-  RESUME_LINK: "https://drive.google.com/file/d/1oReU6iIOZNdqp5FJ-hbbLiuIuGU5N_QS/view?usp=sharing",
+  RESUME_LINK: "https://tinyurl.com/resumeshubhzz",
   TRAVEL_TAILOR_LINK: "https://traveltailor.in/home",
   YANTRA_WINDOWS_LINK: "https://yantrawindows.com",
   MODELS: {
